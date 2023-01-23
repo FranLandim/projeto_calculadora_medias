@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*na tag body vamos colocar a cor de fundo*/
+body {
+  background-color: #E7e7e7;
+  padding-top: 100px; /*Ajustando o tamnho conforme figma*/
+}
+
+header {
+  display: flex; /*Para os elementos ficarem um ao lado do outro*/
+  align-items: center; /*Para ficrem alinhados na vertical*/
+  margin-bottom: 40px; /*Separando o titulo do formulario*/
+}
+
+header img {
+  height: 36px; /*Ajsutando o tamanho da imagem conforme o figma*/
+  margin-right: 16px; 
+}
+
+header h1 {
+  font-size: 40px; /*Ajustando o tamanho do titulo conforme o figma*/
+  font-weight: bold
+  ;
+}
+
+.container {
+  max-width: 960px;/*Esse container vai ocupar 100% até 960px, isso faz com que o conteudo fique 
+  centralizado em qualquer monitor*/
+  width: 100%;
+  margin: 0 auto; /*Para centralizar na horizontal*/
+}
+
+form {
+  display: flex;/*os campos podem até estarem alinhados, mas o display flex
+  faz com que eles fiquem precisamente alinhados */
+  max-width: 640px;/*Area maxima*/
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+form input {
+  font-size: 24px;
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid black ;
+  padding: 8px;
+}
+
+form button {
+  background-color: #009432;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  border: none
+  cursor: pointer;
+  padding: 8px;
+}
+
+table {
+  width: 100%; /*100% da largura da tabela*/
+}
+
+table th {
+  border-bottom: 2px solid #000;
+  padding: 16px; /*Espaçamento*/
+  font-size: 24px;
+  font-weight: bold;
+}
+
+table td {
+  padding: 16px 0; /*Espaçamento na parte inferior e superior, laterais 0*/
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+table td img {
+  width: 30px;
+}
+
+.resultado { /*Essa classe se aplica ao TD APROVADO no HTML*/
+  padding: 8px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border-radius: 3px;/*borda arredondada*/
+}
+
+.aprovado {
+  background-color: #009432;
+}
+
+.reprovado {
+  background-color: red;
+}
